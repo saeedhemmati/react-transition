@@ -1,0 +1,10 @@
+@import "src/assets/scss/mixin";
+
+.container {
+  &.fadeIn {
+    @include fadeIn(1s, ease-in);
+  }
+  &.fadeOut {
+    @include fadeOut(1s, ease-out);
+  }
+}

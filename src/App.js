@@ -1,8 +1,32 @@
-import React from 'react';
+import React, { useState } from 'react';
+import Transition from './components/transition/Transition';
 
 const App = () => {
+  const [effect, setEffect] = useState('fadeIn');
+
+  const handleFadeEffect = () => {
+    if (effect === 'fadeIn') {
+      setEffect('fadeOut');
+    } else {
+      setEffect('fadeIn');
+    }
+  }
+
   return (
-    <p>Text</p>
+    <>
+      <Transition
+        effect={effect}
+        duration={200}
+      >
+        <p>Fade transition</p>
+      </Transition>
+      <button
+        type="button"
+        onClick={handleFadeEffect}
+      >
+        Click!
+      </button>
+    </>
   );
 }
 

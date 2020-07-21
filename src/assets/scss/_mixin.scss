@@ -1,0 +1,13 @@
+@mixin fadeIn($time, $timingFunction) {
+  transition: opacity $time $timingFunction;
+  -moz-transition: opacity $time $timingFunction;
+  -webkit-transition: opacity $time $timingFunction;
+  opacity: 1;
+}
+
+@mixin fadeOut($time, $timingFunction) {
+  transition: opacity $time $timingFunction;
+  -moz-transition: opacity $time $timingFunction;
+  -webkit-transition: opacity $time $timingFunction;
+  opacity: 0;
+}

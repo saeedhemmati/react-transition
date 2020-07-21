@@ -2,7 +2,7 @@ import React from 'react';
 import './transition.scss';
 
 const Transition = (props) => {
-  const { duration, effect, children } = props;
+  const { durationMS, effect, children } = props;
 
   return (
     <div

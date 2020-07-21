@@ -16,7 +16,7 @@ const App = () => {
     <>
       <Transition
         effect={effect}
-        duration={200}
+        durationMS={200}
       >
         <p>Fade transition</p>
       </Transition>

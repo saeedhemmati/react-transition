@@ -7,7 +7,7 @@ const Transition = (props) => {
   return (
     <div
       style={{
-        transitionDuration: `${duration}ms`,
+        transitionDuration: `${durationMS}ms`,
       }}
       className={`container ${effect}`}
     >

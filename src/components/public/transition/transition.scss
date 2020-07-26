@@ -7,4 +7,14 @@
   &.fadeOut {
     @include fadeOut(1s, ease-out);
   }
+  &.slideInDown {
+    * {
+      @include slideInDown(1s);
+    }
+  }
+  &.slideInUp {
+    * {
+      @include slideInUp(1s);
+    }
+  }
 }

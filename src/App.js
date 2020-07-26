@@ -1,31 +1,12 @@
 import React, { useState } from 'react';
-import Transition from './components/transition/Transition';
+import Fade from './components/fade/Fade';
+import Slide from './components/slide/Slide';
 
 const App = () => {
-  const [effect, setEffect] = useState('fadeIn');
-
-  const handleFadeEffect = () => {
-    if (effect === 'fadeIn') {
-      setEffect('fadeOut');
-    } else {
-      setEffect('fadeIn');
-    }
-  }
-
   return (
     <>
-      <Transition
-        effect={effect}
-        durationMS={200}
-      >
-        <p>Fade transition</p>
-      </Transition>
-      <button
-        type="button"
-        onClick={handleFadeEffect}
-      >
-        Click!
-      </button>
+      <Fade />
+      <Slide />
     </>
   );
 }

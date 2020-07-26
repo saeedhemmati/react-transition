@@ -1,3 +1,5 @@
+@import "./animation";
+
 @mixin fadeIn($time, $timingFunction) {
   transition: opacity $time $timingFunction;
   -moz-transition: opacity $time $timingFunction;
@@ -10,4 +12,12 @@
   -moz-transition: opacity $time $timingFunction;
   -webkit-transition: opacity $time $timingFunction;
   opacity: 0;
+}
+
+@mixin slideInDown($time) {
+  animation: slideInDown $time ease;
+}
+
+@mixin slideInUp($time) {
+  animation: slideInUp $time ease;
 }
